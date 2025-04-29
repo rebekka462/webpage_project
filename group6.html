@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <title>Storage Units & Encoding</title>
+  <link 
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swa
+ p" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #4f46e5;
+      color: blue;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    .card h2 {
+      color: #4f46e5;
+      font-size: 1.75rem;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    code {
+      background: #e5e7eb;
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.375rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+  </style>
+ </head>
+ <body bgcolor= "#A1AEB1">
+  <header>
+    <h1>Storage Units & Encoding</h1>
+    <p>Understanding how data is stored and interpreted</p>
+  </header>
+  <div class="container">
+    <div class="card">
+      <h2>Common Storage Units</h2>
+      <ul>
+        <li><strong>Bit (b):</strong> Smallest unit of data in computing (0 or 
+1).</li>
+        <li><strong>Byte (B):</strong> 8 bits, typically represents one 
+character.</li>
+        <li><strong>Kilobyte (KB):</strong> 1,024 Bytes.</li>
+        <li><strong>Megabyte (MB):</strong> 1,024 KB.</li>
+        <li><strong>Gigabyte (GB):</strong> 1,024 MB.</li>
+        <li><strong>Terabyte (TB):</strong> 1,024 GB.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Data Encoding</h2>
+      <img src="encoding.jpg" 
+alt="Encoding diagram">
+      <p>Encoding determines how data is represented and interpreted.</p>
+      <ul>
+        <li><strong>ASCII:</strong> Uses 7 bits to encode characters (e.g., A = 
+65).</li>
+        <li><strong>UTF-8:</strong> Variable-length encoding supporting all 
+Unicode characters.</li>
+        <li><strong>Base64:</strong> Encodes binary data as ASCII characters for 
+transmission over text-based media.</li>
+        <li><strong>Hexadecimal:</strong> Represents binary data in base-16 
+(e.g., 0x1F).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Why It Matters</h2>
+      <p>Understanding storage units and encoding helps in:</p>
+      <ul>
+        <li>Optimizing file storage and data transmission.</li>
+        <li>Ensuring compatibility across platforms and languages.</li>
+        <li>Debugging data representation issues.</li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Data Learning Hub
+  </footer><a href="index.html">Back to Home Page</a>
+ </body>
+ </html>

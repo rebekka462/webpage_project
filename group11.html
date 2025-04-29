@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer networks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Computer Basics</h1>
+        <nav>
+            <ul>
+                <li><a href="#ip-address">Basics Of IP Address</a></li>
+                <li><a href="#dhcp">DHCP</a></li>
+                <li><a href="#nat">NAT</a></li>
+                <li><a href="#topologies">Network Topologies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="network-b>
+        <section id="#ip-address">
+            <h2>BASICS OF IP Address</h2>
+           <p>An IP address is a unique numerical label assigned to each device connected to a network. It helps devices communicate with each other over the internet or a local network </p>
+
+<h3 >Two types of IP address </h3>
+
+<p>1. IPv(internet protocol version 4)</p>
+
+<p>2. IPv6 (internet protol Version 6)</p>
+
+<b>IPv4</b>
+<p>most commonly used,
+Uses 4 sets of numbers each ranging from 0-255, there are ground 4.3 billion unique IPv4 address but they are running out due to the growth of the internet.</p>
+<b>IPv6 </b>
+<p>newes and longer,
+uses 8 sets of hexadecimal numbers, Supports toillions of addresses to accommodate internel growth.</p>
+
+<h3>public Vs Private IP Addresses</h3>
+
+<b>Public IP address </b>
+
+<p>used to connect to the internet, unique world wide Public IPs are assigned by Internet Service providers (ISP)</p>
+
+<b>Private Ip address</b>
+
+<p>Using within local networks not accessible from the internet , Private IPs are used in home or office networks</p>
+
+<h3>Static Vs Dynamic IP Addresses</h3>
+
+<b>Static IP address </b>
+
+<p>Permanent IP address; does not change,Assigned by Manually configured, Static IPs are used for web servers and remote access.<\p>
+
+<b>Dynamic IP address </b>
+
+<p>changes over time, Dynamic IPs are used by home users to save cost</p>
+        <section id="dhcp">
+            <h2>DHCP</h2>
+            <p>DHCP stands for Dynamic Host Configuration Protocol. It's a network protocol that automatically assigns IP addresses and other network settings to devices on a network.</p>
+<img src ="dhcp.jpg">
+
+<h3>Key Features of DHCP</h3>
+
+<b>1. Dynamic IP allocation:</b> 
+<p>DHCP assigns IP addresses to devices for a specified period, known as a lease.</p>
+<b>2. Automatic configuration:</b>
+ <p>DHCP provides devices with IP addresses, subnet masks, default gateways, and other network settings.</p>
+<b>3. Centralized management:</b>
+<p>DHCP allows network administrators to manage IP address allocation and other network settings from a central location.</p>
+
+<h3>How DHCP Works</h3>
+
+<b>1. Device discovery:</b>
+ <p>A device connects to the network and sends a DHCP request.</p>
+<b>2. DHCP offer:</b>
+<p>The DHCP server offers an IP address and other network settings to the device.</p>
+<b>3. Device acceptance:</b> 
+<p>The device accepts the offered IP address and other network settings.</p>
+<b>4. Lease renewal:</b>
+ <p>The device renews its IP address lease periodically.</p>
+
+<h3>Benefits of DHCP</h3>
+
+<b>1. Simplified network management:</b>
+<p>DHCP reduces the need for manual IP address configuration.</p>
+<b>2. Improved scalability:</b> 
+<p>DHCP allows for efficient IP address allocation in large networks.</p>
+<b>3. Increased flexibility:</b> 
+<p>DHCP enables devices to move between networks without requiring manual configuration.</p>
+
+<h3>Application of DHCP</h3>
+
+<pre>1.  Enterprise and home networks 
+2.  ISP managed networks
+3.  Network management
+4.  Wireless networs</pre>
+
+<h3>Common DHCP Terms</h3>
+<b>1. DHCP server:</b>
+ <p>The device that assigns IP addresses and other network settings.</p>
+<b>2. DHCP client:</b> 
+<p>The device that requests IP addresses and other network settings.</p>
+<b>3. Lease:</b>
+<p>The period of time for which a device is assigned an IP address.</p>
+<b>4. Scope:</b> 
+<p>The range of IP addresses available for assignment by the DHCP server.</p>
+            </section>
+
+        <section id="nat">
+          <h2>NAT</h2>
+        
+           <p>NAT (Network Address Translation) lets multiple devices on a local network share a single public IP address to access the internet. Routers commonly use it to conserve public IPs and enhance security by hiding internal network details.</p>
+
+<b>Working </b>
+<p>NAT allows devices on a private network to communicate with the internet by translating their private IP addresses to the router's public IP address.</p>
+<Img src ="public.jpg">
+<h3>Types of NAT </h3>
+<p><b>Static NAT</b> One-to-one mapping of private to public IPs, used for making internal servers accessible externally (e.g., web or FTP servers).</p>
+<p><b>Dynamic NAT
+</b>Maps private IPs to a pool of public IPs, assigning an available one for each connection. The same public IP isn't guaranteed each time.</p>
+<p><b>PAT/Overloading</b>Maps many private IPs to a single public IP using different port numbers, allowing multiple devices to share one public IP (common in home routers).</p>
+<p><b>NAT64</b> Translates between IPv6 and IPv4 addresses, enabling communication between IPv6 clients and IPv4 servers.</p>
+<h3>Advantages</h3> 
+ <p><b>Saves Public IPs</b>NAT lets many devices share one internet address.</p>
+<p><b> Boosts Security</b>It hides your internal network, blocking easy external access.</p>
+ <p><b>Simplifies Setup</b> Managing internal IP addresses becomes less complex.</p>
+ <p><b>Aids IPv6 Transition</b> NAT helps newer IPv6 devices work with older IPv4 systems.</p>
+<h3>Disadvantages of NAT</h3>
+<p><b>Breaks Direct Connections</b>NAT hinders some direct peer-to-peer apps.</p>
+ <p><b> Troublesome Protocols</b>It complicates protocols that include IP addresses in their data.</p>
+<p><b>Performance Hit</b>Translation can slow down busy networks.</p>
+ <p><b>Limits Incoming Access</b> Incoming connections to internal devices are blocked by default.</p>
+ 
+            </section>
+
+        <section id="topologies">
+            <h2>Topologies</h2>
+            <p>Network topology refers to the physical or logical arrangement of devices in a network</p>
+<h3>Types of network topologies</h3>
+<p><b>1.bus topology</b>:All devices are connected to a single cable or backbone </p> <p>
+<b>2.Star topology</b>: Devices are connected to a central devices or hub</p> <p>
+<b>3.Ring topology</b>: Devices are connected in a circular configuration </p><p>
+<b>4.Mesh topology</b>:Each devices is connected to every other device </p> <p>
+<b>5.Tree topology </b>:A combination of bus and star topology </p><p>
+<b>6.Hybrid topology</b>:A combination of different topologies </p>
+<Img src ="topology.jpg">
+<h3>Advantages and disadvantages</h3>
+<b>Bus topology</b>: simple to install,but difficult to troubleshoot 
+<p><b>star topology</b>:easy to add or remove devices but depend on the central devices </p><p>
+<b>mesh topology</b>: highly reliable, but expensive and complex</p> <p>
+<b>Ring topology</b>: performance can degrade with more devices but it can offer efficient data transmission</p>
+            </section>
+    </main>
+
+    <footer>
+      presented by:  
+<Marquee><p>
+1.Blessy John(26)
+2.Ann mariya joseph(22)
+3.fathima fiza(30)
+4.Anupriya(23)</marquee></p>
+    </footer>
+    <a href="index.html">Back to Home Page</a>
+</body>
+</html>

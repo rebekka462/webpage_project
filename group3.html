@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Devices</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 30px;
+        }
+        .device {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .device h2 {
+            color: #ffe;
+        }
+        .device p {
+            line-height: 1.6;
+        }
+        .device ul {
+            margin-top: 10px;
+        }
+        .device img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .comparison {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            color: #fff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #444;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #ddd;
+        }
+        .link{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>STORAGE DEVICES</h1>
+    </header><nav>
+    <a href="#hdd">HDD</a>
+    <a href="#ssd">SSD</a>
+    <a href="#optical">Optical Drives</a>
+    <a href="#comparison">Comparison</a>
+</nav>
+
+<div class="container">
+    <div class="device" id="hdd">
+        <h2>HDDs (Hard Disk Drives)</h2>
+        <p>HDDs are traditional data storage devices that use spinning magnetic disks to store and retrieve digital information. They are commonly used in desktops and laptops due to their high storage capacity and low cost per gigabyte. However, they have slower read/write speeds compared to SSDs and are more prone to mechanical failure because of moving parts.</p>
+        <ul>
+            <li>Cost-effective for bulk storage</li>
+            <li>Available in large capacities (1TB to 16TB+)</li>
+            <li>Mechanical components vulnerable to damage</li>
+            <li><a href="images.html" class="link">Photos</a></li>
+        </ul>
+        
+    
+    </div>
+
+    <div class="device" id="ssd">
+        <h2>SSDs (Solid State Drives)</h2>
+        <p>SSDs are advanced storage devices that use NAND-based flash memory to store data. Unlike HDDs, they have no moving parts, which makes them more resistant to physical shock, quieter, and faster. SSDs are widely used in modern laptops and high-performance PCs. They also have a longer lifespan and consume less power, making them ideal for portable devices.</p>
+        <ul>
+            <li>Much faster read/write speeds than HDDs</li>
+            <li>No moving parts, more durable</li>
+            <li>More expensive per GB compared to HDDs</li>
+            <li><a href="images.html" class="link">Photos</a></li>
+        </ul>
+       
+    </div>
+    <div class="device" id="optical">
+        <h2>Optical Drives</h2>
+        <p>Optical drives read and write data using laser technology on optical discs such as CDs, DVDs, and Blu-ray discs. Although their use has declined with the rise of USB drives and cloud storage, optical drives are still useful for media playback, software installation, and data archiving. They offer a cost-effective method of storing and distributing large amounts of data in a physical format.</p>
+        <ul>
+            <li>Good for long-term storage and backup</li>
+            <li>Commonly used for multimedia and software distribution</li>
+            <li>Slower and less portable compared to other storage types</li>
+            <li><a href="images.html" class="link">Photos</a></li>
+        </ul>
+    </div>
+
+    <div class="comparison" id="comparison">
+        <h2>Comparison of Storage Devices</h2>
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>HDD</th>
+                <th>SSD</th>
+                <th>Optical Drive</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>Slow</td>
+                <td>Fast</td>
+                <td>Very Slow</td>
+            </tr>
+            <tr>
+                <td>Durability</td>
+                <td>Moderate</td>
+                <td>High</td>
+                <td>Moderate</td>
+            </tr>
+            <tr>
+                <td>Storage Capacity</td>
+                <td>Up to 16TB+</td>
+                <td>Up to 8TB</td>
+                <td>Up to 100GB (Blu-ray)</td>
+            </tr>
+            <tr>
+                <td>Portability</td>
+                <td>Low</td>
+                <td>High</td>
+                <td>Low</td>
+            </tr>
+            <tr>
+                <td>Cost per GB</td>
+                <td>Low</td>
+                <td>High</td>
+                <td>Low</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer>
+    <p> Group Members : Amay,Hithan,Nidhin,Shibili</p>
+</footer>
+<a href="index.html">Back to Home Page</a>
+
+</body>
+</html>

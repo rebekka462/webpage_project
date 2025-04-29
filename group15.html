@@ -1,0 +1,121 @@
+<!Fc project>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML vs XHTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .topic {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-left: 5px solid #007BFF;
+      background-color: #e0f7fa;
+      display: none;
+    }
+
+    button {
+      margin: 10px 0;
+      padding: 8px 12px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .section-group {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>HTML vs XHTML</h1>
+
+    <div class="section-group">
+      <button onclick="toggleSection('htmlUsage', this)">Show HTML Usage</button>
+      <div id="htmlUsage" class="topic">
+        <h2>Structure and Usage of HTML</h2><p>HTML (HyperText Markup Language) is the foundation of web development. It provides a simple, flexible syntax that allows developers to structure content on web pages with ease. HTML uses tags such as <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>, and <code>&lt;a&gt;</code> to define headings, paragraphs, images, and links respectively.</p>
+
+<p>HTML is forgiving of minor errors like missing closing tags and supports both uppercase and lowercase tag names. This makes it beginner-friendly
+
+and compatible with all modern web browsers.</p> <p>HTML5 introduced semantic elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code>, which help improve the structure and accessibility of web documents.</p>
+      </div>
+    </div>
+
+    <div class="section-group">
+      <button onclick="toggleSection('xhtmlUsage', this)">Show XHTML Usage</button>
+      <div id="xhtmlUsage" class="topic">
+        <h2>Structure and Usage of XHTML</h2>
+        <p>XHTML (Extensible HyperText Markup Language) is a stricter version of HTML based on XML. It enforces a well-formed syntax, requiring every tag to be properly closed, nested, and written in lowercase. Attributes must always be quoted, and empty elements must use self-closing syntax (e.g., <code>&lt;br /&gt;</code>).</p>
+
+<p>This rigidity helps prevent rendering inconsistencies and makes documents more compatible with data processing tools and XML parsers. XHTML is often used in environments that require strict data integrity and precise document structure.</p>
+
+<p>XHTML documents must also be served with the correct MIME type (like <code>application/xhtml+xml</code>) for full compliance.</p>
+      </div>
+    </div>
+
+    <div class="section-group">
+      <button onclick="toggleSection('differences', this)">Show Differences</button>
+      <div id="differences" class="topic">
+        <h2>Difference Between HTML and XHTML</h2>
+        <ul>
+
+<li><strong>Syntax:</strong> XHTML requires strict syntax; HTML is more lenient.</li>
+
+<li><strong>Tag Closure:</strong> All XHTML elements must be closed; HTML allows optional closure.</li>
+
+F
+
+<li><strong>Case Sensitivity:</strong> XHTML tags and attributes must be in lowercase; HTML is case-insensitive.</li>
+
+<li><strong>Error Handling:</strong> Browsers can correct HTML errors; XHTML documents with errors may not render at all.</li>
+
+<li><strong>Compatibility:</strong> HTML is widely supported in modern browsers; XHTML is more compatible with XML-based tools.</li>
+
+</ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(id, btn) {
+      const section = document.getElementById(id);
+      if (section.style.display === 'none' || section.style.display === '') {
+        section.style.display = 'block';
+        btn.textContent = 'Hide ' + btn.textContent.slice(5);
+      } else {
+        section.style.display = 'none';
+        btn.textContent = 'Show ' + btn.textContent.slice(5);
+      }
+    }
+  </script>
+ <a href="index.html">Back to Home Page</a> <a href="index.html">Back to Home Page</a>
+</body>
+</html>

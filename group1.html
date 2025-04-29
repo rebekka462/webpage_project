@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Computer Hardware: CPU and Memory</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    h1, h2 {
+      color: #0056b3;
+      margin-top: 1.5em;
+      border-bottom: 2px solid #0056b3;
+      padding-bottom: 0.5em;
+    }
+
+    h3 {
+      color: #0056b3;
+      margin-top: 1em;
+    }
+
+    ul, ol {
+      margin-bottom: 1em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    .slide-section {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cpu-image, .memory-diagram {
+      display: block;
+      margin: 1em auto;
+      max-width: 80%;
+      height: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #0056b3;
+      color: white;
+    }
+
+    .code-block {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-left: 4px solid #0056b3;
+      margin: 10px 0;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="slide-section">
+    <h1>Computer Hardware: CPU and Memory</h1>
+    <p>This presentation provides an overview of key computer components: the Central Processing Unit (CPU) and Memory.</p>
+  </div>
+
+  <div class="slide-section">
+    <img src="cpu1.jpg" alt="cpu" class="ram">
+    <h2>What is the CPU?</h2>
+    <p>The Central Processing Unit (CPU) is often referred to as the brain of the computer. It performs most of the processing by executing program instructions.</p>
+    <ul>
+      <li>Executes program instructions</li>
+      <li>Coordinates hardware operations</li>
+    </ul>
+    <p>Key components:</p>
+    <ul>
+      <li><strong>ALU</strong> – Arithmetic and logic operations</li>
+      <li><strong>Control Unit</strong> – Directs processor operations</li>
+      <li><strong>Registers</strong> – High-speed storage for temporary data</li>
+    </ul>
+  </div>
+
+  <div class="slide-section">
+    <h2>CPU Instruction Cycle</h2>
+    <ol>
+      <li><strong>Fetch</strong>: Retrieve instruction from memory</li>
+      <li><strong>Decode</strong>: Translate to CPU-understandable format</li>
+      <li><strong>Execute</strong>: Carry out the instruction</li>
+    </ol>
+  </div>
+
+  <div class="slide-section">
+    <h2>Types of CPUs</h2>
+    <ul>
+      <li>Single-Core CPU – One processing unit (e.g., Intel Pentium 4)</li>
+      <li>Multi-Core CPU – Multiple cores for parallel processing (e.g., AMD Ryzen 7)</li>
+      <li>Hyper-Threading CPU – Simultaneous thread handling (e.g., Intel i7-10700K)</li>
+      <li>ARM-based CPU – Efficient, RISC-based (e.g., Apple M2, Snapdragon 8 Gen 2)</li>
+    </ul>
+  </div>
+
+  <div class="slide-section">
+    <h2>CPU Architecture: RISC vs. CISC</h2>
+    <p><strong>RISC (Reduced Instruction Set Computing):</strong></p>
+    <ul>
+      <li>Simpler instructions, faster execution</li>
+      <li>Example: ARM, MIPS</li>
+    </ul>
+    <p><strong>CISC (Complex Instruction Set Computing):</strong></p>
+    <ul>
+      <li>Complex instructions, fewer lines of code</li>
+      <li>Example: Intel x86, AMD Ryzen</li>
+    </ul>
+  </div>
+
+  <div class="slide-section">
+    <h2>Popular CPUs</h2>
+    <p><strong>Intel:</strong></p>
+    <ul>
+      <li>i5-13600K – 14 cores / 20 threads (Gaming & Productivity)</li>
+      <li>i9-13900K – 24 cores / 32 threads (High-end)</li>
+    </ul>
+    <p><strong>AMD:</strong></p>
+    <ul>
+      <li>Ryzen 5 7600X – 6 cores / 12 threads</li>
+      <li>Ryzen 9 7950X – 16 cores / 32 threads</li>
+    </ul>
+    <p><strong>ARM:</strong></p>
+    <ul>
+      <li>Apple M2 – 8-core CPU, 10-core GPU</li>
+      <li>Snapdragon 8 Gen 2 – Mobile devices</li>
+    </ul>
+  </div>
+
+  <div class="slide-section">
+    <h2>Factors Affecting CPU Performance</h2>
+    <ul>
+      <li><strong>Clock Speed</strong> – Measured in GHz; affects execution speed</li>
+      <li><strong>Cores & Threads</strong> – Enables multitasking and parallelism</li>
+      <li><strong>Cache Size</strong> – Faster data access for common tasks</li>
+      <li><strong>Architecture</strong> – Impacts instruction handling</li>
+      <li><strong>TDP (Thermal Design Power)</strong> – Heat output and energy efficiency</li>
+    </ul>
+  </div>
+
+  <div class="slide-section">
+    <h2>Memory Overview</h2>
+    <ul>
+      <li><strong>RAM (Random Access Memory):</strong> Volatile, temporary storage for active processes</li>
+      <li><strong>ROM (Read-Only Memory):</strong> Non-volatile, stores firmware and boot instructions</li>
+    </ul>
+  </div>
+
+  <div class="slide-section">
+    <h2>Memory Hierarchy</h2>
+    <p>Memory in computers is structured in a hierarchy for performance and cost efficiency:</p>
+    <ol>
+      <li>Registers – Fastest, built into the CPU</li>
+      <li>Cache – L1, L2, L3: Small but fast memory close to CPU</li>
+      <li>RAM – Primary memory for active tasks</li>
+      <li>Virtual Memory – Uses storage (e.g., SSD/HDD) to extend RAM</li>
+    </ol>
+  </div>
+
+  <div class="slide-section">
+   <img src="ram.jpg" alt="ram" class="ram">
+  </div>
+</div>
+<a href="index.html">Back to Home Page</a>
+
+</body>
+</html>

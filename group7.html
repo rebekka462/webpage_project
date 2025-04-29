@@ -1,0 +1,197 @@
+HTML<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Representation & CPU Architecture</title>
+    <link rel="stylesheet" href="style11.css">
+    <link href="group7.css" rel="stylesheet">
+</head>
+
+<body>
+    <header data-aos="fade-down">
+        <h1>EXPLORING DATA REPRESENTATION AND CPU ARCHITECTURE</h1>
+    </header> <nav data-aos="fade-up">
+        <ul>
+            <li><a href="#ALU">ALU</a></li>
+              
+            <li><a href="#Registers">Registers</a></li>
+            <li><a href="#control-unit">Control Unit</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section data-aos="fade-up" >
+            <h2>Data Representation</h2>
+            <p>This section will cover various aspects of data representation in computers. We will explore binary numbers, hexadecimal, ASCII, Unicode, and different data types like integers, floating-point numbers, and booleans. Understanding how data is encoded and stored is fundamental to computer science.</p>
+            <h3>Binary System</h3>
+            <p>At the heart of computing lies the binary system, using only two digits: 0 and 1. This allows for the representation of all types of data through combinations of these bits.</p>
+            <p>For example, the decimal number 5 is represented as  1 0 1 in binary.</p> 
+            <h3 >Number systems</h3>
+            <p>Besides binary,computers also work with other number systems like decimal(base-10),hexadecimal(base-16)and octal(base-8).Each system have it's advantagesin specific contexts.</p>
+            <h4>Data Types</h4>
+            <p>Computers handle different types of data, including integers, floating-point numbers, characters, and booleans. Each type has a specific way of being represented in memory.</p>
+            <ul>
+                <li><strong>Integers:</strong> Whole numbers, can be signed or unsigned.</li><br>
+                <li><strong>Floating-point:</strong> Numbers with decimal points, represented using standards like IEEE 754.</li><br>
+                <li><strong>Characters:</strong> Letters, symbols, and digits, often represented using ASCII or Unicode.</li><br>
+                <li><strong>Booleans:</strong> Logical values, either true or false, typically represented by 1 and 0 respectively.</li><br>
+            </ul>
+            
+        </section>
+        </main>
+            <section data-aos ="fade-up" >
+            <h2>CPU Architecture</h2>
+            <p>In this section, we will delve into the architecture of the Central Processing Unit (CPU). Topics will include the fetch-decode-execute cycle, registers, the arithmetic logic unit (ALU), control unit, cache memory, and different CPU architectures like Von Neumann and Harvard.</p>
+            <img src="cpuarch.jpg" alt="ALU diagram" style="width: 50%;height: 50%;display:block;margin:auto;">
+            
+            <h3>Key Components</h3>
+            <ul>
+                <li><strong>Arithmetic Logic Unit (ALU):</strong> Performs arithmetic and logical operations.</li><br>
+                <li><strong>Control Unit (CU):</strong> Manages the flow of instructions within the CPU.</li><br>
+                <li><strong>Registers:</strong> Small, high-speed storage locations used to hold data and instructions temporarily.</li><br>
+                <li><strong>Cache Memory:</strong> High-speed memory used to store frequently accessed data, improving performance.</li>
+            </ul></section>
+            <section data-aos="zoom in" >
+            <section id="ALU"> 
+                <h2>ALU</h2>
+                <p>The Arithmetic Logic Unit (ALU) is a critical component of a computer's central processing unit (CPU). It performs arithmetic and logical operations, such as addition, subtraction, multiplication, division, AND, OR, and NOT.
+                </p>
+                <img src="alu.jpg" alt="ALU diagram"style="width: 50%;height: 50%;display:block;margin:auto;">
+                <h3>Key Functions</h3>
+                <ul>
+                    <li><strong> Arithmetic Operations:</strong>   Executes logical operations like AND, OR, NOT, and XOR
+                    </li><br>
+                    <li><strong> Logical Operations:</strong> Manages the flow of instructions within the CPU.</li><br>
+                    
+                    <li><strong>Bitwise Operations:</strong>  Performs operations on individual bits, such as shifting and rotating.
+                    </li>
+                </ul><br>
+                <h3>How ALU works?</h3>
+                <ul>
+                <li>Receives input data from registers or memory</li><br>
+                <li> Performs the specified operation based on the instruction.
+                </li><br>
+                <li>Produces output, which is stored in registers or memory.
+                </li></ul><br>
+                <h3>Importance of ALU</h3>
+                <ul><li>Enables computers to perform calculations and execute instructions.
+                </li><br>
+            <li>Plays a crucial role in determining the overall performance of a computer system</li></ul>
+        <ul><li> ALU performs complex arithmetic and logical operations, enabling computers to solve complex problems.
+            </li></section></ul></section>
+            <section data-aos="zoom-in" >
+            <section id="Registers">
+                <h2>Registers</h2>
+                <p>Registers are small, fast memory locations built into the CPU (Central Processing Unit) that store data temporarily while it's being processed. They play a crucial role in the execution of instructions and are a key component of the CPU's architecture.
+                </p>
+                <img src="register.jpg" alt="ALU diagram"style="width: 50%;height: 50%;display:block;margin:auto;">
+                <h3>Key Characteristics</h3>
+                <ul>
+                    <li><strong> Small size:</strong>    Registers are small and can store a limited amount of data, typically a single word or byte.
+                    </li><br>
+                    <li><strong> Fast access:</strong>     Registers are accessed quickly, allowing for fast execution of instructions.
+                    </li><br>
+                    <li><strong>Temporary Storage</strong> Registers store data temporarily while it's being processed, and the data is usually discarded or stored in memory after processing.
+                    </li>
+                <h3>Types of Registers</h3>
+                    <li><strong>General-purpose registers:</strong>  Can be used for a variety of tasks, such as storing data, addresses, or instruction operands</li><br>
+                 <li><strong>Special-purpose registers:</strong>Have a specific function, such as storing the program counter (PC) or status flags.</li><br>
+                 <li><strong>Index registers:</strong>  Used to store addresses or offsets for memory access. </li><br>
+                 <li><strong>Accumulators:</strong>   Used to store the result of arithmetic and logical operations.</li><br>
+                 
+
+                 <h3>Importance of Registers:
+                </h3>
+                <li><strong>Improved performance:</strong> Registers enable fast access to data, improving the overall performance of the CPU.
+                </li><br>
+                <li><strong>Efficient instruction execution</strong> Registers allow for efficient execution of instructions, reducing the number of memory accesses required.</li><br></ul></section>
+            
+                <section data-aos="zoom-in" >
+                <section id="control-unit">
+
+                <h2>Control Unit</h2></section>
+                <p>The Control Unit (CU) is a critical component of the Central Processing Unit (CPU) that manages the flow of data and instructions within the CPU.
+                </p>
+                <img src="cpu.jpg" alt="ALU diagram"style="width: 50%;height: 50%;display:block;margin:auto;">
+                <h3>Key Functions</h3>
+                <ul>
+                    <li><strong> Instruction Fetch:</strong>    Retrieves instructions from memory.
+                    </li><br>
+                    <li><strong> Instruction Decode:</strong>  Decodes the instructions and determines the operation to be performed.
+                    </li><br>
+                    
+                    <li><strong> Data Transfer:</strong> Manages the transfer of data between different parts of the CPU, memory, and input/output devices.
+
+                    </li><br>
+                    <li><strong> Control Signals:</strong> Generates control signals to execute instructions, such as enabling or disabling gates, registers, and other components.
+
+                    </li>
+                </ul><br>
+                <h3>How Control Unit Works?</h3>
+                <ul>
+                <li>Receives instructions from memory.
+                </li><br>
+                <li>  Decodes the instructions and generates control signals.
+                </li><br>
+                <li> Coordinates the activities of other CPU components.
+                </li></ul><br>
+                <h3>Importance of  Control Unit</h3>
+                <ul><li>Enables computers to perform calculations and execute instructions.
+                </li><br>
+            <li>Manages data transfer and storage.</li></ul>
+        <ul><li>  Plays a crucial role in determining the overall performance of the computer system.
+
+            </li></ul></section>
+
+                
+           
+
+
+
+            <section data-aos ="fade-up" >
+            <h2>Further Exploration</h2>
+            <p> The Arithmetic Logic Unit (ALU), Registers, and Control Unit are essential components of a computer's Central Processing Unit (CPU). Together, they enable the CPU to perform calculations, store data temporarily, and manage instruction execution.
+
+            </p>
+            <p>Together they,<br>
+
+                Enable efficient instruction execution,
+                 Support complex calculations and 
+                 Improve overall system performance.</p><p>The Control Unit (CU) acts as the CPU's brain, deciding what to do. The Arithmetic Logic Unit (ALU) is its muscle, performing calculations. Registers are the workbench, holding the data for these operations. Efficiently managed registers, directed by the CU to feed the ALU, are key to the CPU's speed in executing complex programs.
+                </p>
+            
+        </section>
+
+        <section id="about">
+
+            <h2>About This Website</h2>
+            <p>This simple website provides a basic overview of data representation and CPU architecture. It aims to introduce fundamental concepts in computer science.
+            </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Data Representation & CPU Architecture</p>
+    </footer>
+    <button id="topBtn" title="Go to top">&uarr;</button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        const topBtn = document.getElementById("topBtn");
+        window.onscroll = () => {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        };
+        topBtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+    <a href="index.html">Back to Home Page</a>
+</body>
+</html>

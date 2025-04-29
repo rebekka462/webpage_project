@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instruction Set & Execution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #ffffff;
+            color: #000000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a1a1a;
+            font-size: 36px;
+            margin-bottom: 40px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        body.dark-mode h1 {
+            color: #f0f0f0;
+        }
+
+        h2 {
+            color: #2E4A62;
+            margin-top: 30px;
+        }
+
+        body.dark-mode h2 {
+            color: #a3cfff;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #888;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        body.dark-mode th {
+            background-color: #333;
+        }
+
+        ul {
+            margin-top: 0;
+        }
+
+        #darkModeToggle {
+            display: block;
+            margin: 10px auto 30px;
+            padding: 10px 20px;
+            background-color: #2e4a62;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #darkModeToggle:hover {
+            background-color: #1b2f43;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 onclick="toggleHeadingColor(this)">INSTRUCTION SET & EXECUTION</h1>
+
+<button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+<h2>8085 Instruction Set - Data Transfer</h2>
+<table>
+    <tr><th>Instruction</th><th>Operation</th><th>Description</th></tr>
+    <tr><td>MOV</td><td>Move</td><td>Transfers data from source to destination.</td></tr>
+    <tr><td>MVI</td><td>Move Immediate</td><td>Loads an immediate value to a register or memory.</td></tr>
+    <tr><td>LXI</td><td>Load Register Pair Immediate</td><td>Loads immediate data into a register pair.</td></tr>
+    <tr><td>LDA</td><td>Load Accumulator</td><td>Loads data from a memory location to the accumulator.</td></tr>
+    <tr><td>STA</td><td>Store Accumulator</td><td>Stores accumulator data to a memory location.</td></tr>
+</table>
+
+<h2>8085 Instruction Set - Arithmetic</h2>
+<table>
+    <tr><th>Instruction</th><th>Operation</th><th>Description</th></tr>
+    <tr><td>ADD</td><td>Add</td><td>Adds register or memory to accumulator.</td></tr>
+    <tr><td>ADI</td><td>Add Immediate</td><td>Adds immediate data to accumulator.</td></tr>
+    <tr><td>SUB</td><td>Subtract</td><td>Subtracts register or memory from accumulator.</td></tr>
+    <tr><td>SUI</td><td>Subtract Immediate</td><td>Subtracts immediate data from accumulator.</td></tr>
+    <tr><td>INR</td><td>Increment</td><td>Increments the content of a register or memory.</td></tr>
+</table>
+
+<h2>8085 Instruction Set - Logical</h2>
+<table>
+    <tr><th>Instruction</th><th>Operation</th><th>Description</th></tr>
+    <tr><td>ANA</td><td>AND Accumulator</td><td>Logical AND with accumulator.</td></tr>
+    <tr><td>ORA</td><td>OR Accumulator</td><td>Logical OR with accumulator.</td></tr>
+    <tr><td>XRA</td><td>Exclusive OR Accumulator</td><td>Logical XOR with accumulator.</td></tr>
+    <tr><td>CMA</td><td>Complement Accumulator</td><td>Complements the content of the accumulator.</td></tr>
+    <tr><td>CPI</td><td>Compare Immediate</td><td>Compares immediate value with accumulator.</td></tr>
+</table>
+
+<h2>8085 Instruction Set - Branching</h2>
+<table>
+    <tr><th>Instruction</th><th>Operation</th><th>Description</th></tr>
+    <tr><td>JMP</td><td>Jump</td><td>Jumps unconditionally to a memory location.</td></tr>
+    <tr><td>JC</td><td>Jump if Carry</td><td>Jumps to a memory location if carry flag is set.</td></tr>
+    <tr><td>JZ</td><td>Jump if Zero</td><td>Jumps to a memory location if zero flag is set.</td></tr>
+    <tr><td>CALL</td><td>Call</td><td>Calls a subroutine.</td></tr>
+    <tr><td>RET</td><td>Return</td><td>Returns from a subroutine.</td></tr>
+</table>
+
+<h2>8085 Instruction Set - Control</h2>
+<table>
+    <tr><th>Instruction</th><th>Operation</th><th>Description</th></tr>
+    <tr><td>NOP</td><td>No Operation</td><td>Does nothing for one clock cycle.</td></tr>
+    <tr><td>HLT</td><td>Halt</td><td>Stops further execution.</td></tr>
+    <tr><td>DI</td><td>Disable Interrupts</td><td>Disables interrupt system.</td></tr>
+    <tr><td>EI</td><td>Enable Interrupts</td><td>Enables interrupt system.</td></tr>
+</table>
+
+<h2>Advantages of Assembly Language</h2>
+<ul>
+    <li><strong>Efficient:</strong> Directly translates to machine instructions.</li>
+    <li><strong>Control:</strong> Provides precise control over hardware.</li>
+    <li><strong>Optimization:</strong> Allows fine-tuning for performance.</li>
+    <li><strong>Small Code Size:</strong> Minimal overhead compared to high-level languages.</li>
+</ul>
+
+<h2>Limitations of Assembly Language</h2>
+<ul>
+    <li><strong>Complexity:</strong> Requires detailed knowledge of hardware.</li>
+    <li><strong>Portability:</strong> Platform-dependent.</li>
+    <li><strong>Development Time:</strong> Slower compared to high-level languages.</li>
+    <li><strong>Error-Prone:</strong> Hard to debug and maintain.</li>
+</ul>
+
+<h2>Instruction Execution Cycle</h2>
+<ul>
+    <li><strong>Fetch:</strong> Retrieve the next instruction from memory.</li>
+    <li><strong>Decode:</strong> Decode the instruction to determine the operation.</li>
+    <li><strong>Execute:</strong> Perform the operation (ALU, memory access, etc.).</li>
+    <li><strong>Store:</strong> Write the result back to memory or registers.</li>
+</ul>
+<p>This cycle is repeated until the program ends.</p>
+
+<div style="text-align: center; margin-top: 20px;">
+    <img src="https://th.bing.com/th/id/OIP._Pkpb4hNYXUQgxrb1Dr7IgHaD8?rs=1&pid=ImgDetMain" alt="Instruction Cycle Diagram">
+</div>
+
+<script>
+    function toggleHeadingColor(element) {
+        element.style.color = (element.style.color === 'red') ? 'black' : 'red';
+    }
+
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+<a href="index.html">Back to Home Page</a>
+</body>
+</html>

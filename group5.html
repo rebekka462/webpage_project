@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+<title>Data representation</title>
+<style type="text/css">
+body{
+   font-family:Arial,sans-serif;
+   background-color:#ffffff
+   margin: auto;
+   padding:2em;
+   line-height: 1.4;
+   
+}
+header{
+background-color:#d3d3ee;
+padding:1em
+font-size:2em;  
+
+}
+ul {
+      list-style-type: disc;
+      margin-left: 2em;
+      font-size: 1.1em;
+    }
+</style>
+</head>
+<body>
+    <header>Binary representation</header>
+    <ul>
+    <li>Binary system uses two digits: 0 and 1.</li>
+    <li>Each digit (bit) represents a power of 2.</li>
+    <li>Example:</li>
+    <li>Binary 1011 = 1·23 +0·22 +1·21 +1·20 = 11.</li>
+    </ul>
+    <header>Why Binary?</header>
+    <ul>
+    <li>Simple to implement in digital circuits</li>
+    <li>High reliability due to clear distinction between states (0 and 1).</li>
+    <li>Compatibility with Boolean logic for computation and storage.</li>
+    </ul>
+    <header>Using Integer Representation</header>
+    <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fscs.hosted.panopto.com%2FPanopto%2FPages%2FViewer%2FThumb.aspx%3FeventTargetPID%3Df02fb73c-8769-43de-a970-bda301209a04%26sessionPID%3D57b29532-2a7d-4dac-8168-8892127d9e49%26number%3D20%26isPrimary%3Dfalse%26absoluteTime%3D13076614406.5337"
+        > 
+    <ul>
+    <li>Represents only positive integers.</li>
+    <li>Range: 0 to 2n −1 for n-bit numbers.</li>
+    <li>Example</li>
+    <li>8-bit number: Range is 0 to 28 −1 =255.</li>
+    </ul>
+    <header>Signed Integer Representation</header>
+    <img src="https://prof-thiagooliveira.netlify.app/post/signed-and-unsigned-binary-numbers/sign_bit.png" >
+    <ul>
+    <li>Most significant bit (MSB) is the sign bit:</li>
+    <li>0 for positive, 1 for negative.</li>
+    <li>Representation methods</li>
+    
+             <ol>
+            <li>Sign-and-magnitude</li>
+            <li>1’s complement</li>
+            <li>2’s complement (most common).</li>
+            </ol>
+     </ul>        
+<header>1’s Complement Representation</header>
+<ul>
+<li>In 1’s complement representation, the representation of the positive number is same as the negative number. But the representation of the negative number is different.</li>
+<li>To represent a negative number, take corresponding positive number and invert all bits.</li>
+</ul>
+<img src="https://www.allaboutelectronics.org/wp-content/uploads/2021/04/1s-complement.png" 
+ width="800"> 
+ <header>2’s Complement Representation</header>
+ <ul>
+ <li>Widely used for signed integers. Simplifies arithmetic operations.</li>
+ <li>How to compute a negative number:</li>
+        <ol>
+        <li>Take the binary of the positive number.</li>
+        <li>Invert the digits (1’s complement).</li>
+        <li>Add 1 to the result</li>
+        </ol>
+   <li>Example: −5 in 4-bit:
+         <ol>
+         <li>Positive 5: 0101.</li>
+         <li>1’s complement: 1010.</li>
+         <li>Add 1: 1011.</li>
+         </ol>
+ </ul>
+ <img src="https://www.allaboutelectronics.org/wp-content/uploads/2021/04/2s-complement_3.png"
+ width="800">
+ <a href="index.html">Back to Home Page</a>         
+    
+</body>
+</html>
